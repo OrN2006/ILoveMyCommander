@@ -185,12 +185,12 @@ function endGame() {
     player.textContent = '☠️';
     
     // קביעת טקסט הסיום לפי ההישג
-    if (score >= 100) {
+    if (score >= 73) {
         gameOverTitle.textContent = "🏆 אשפית הלקטאז!";
-        gameOverText.innerHTML = `כל הכבוד המפקדת! שרדת את ארוחת הערב בגבורה והשגת <b>${score} נקודות</b>.<br>הבטן שלך שקטה ויציבה ב-100%!`;
+        gameOverText.innerHTML = `כל הכבוד לכם! אומר שרדה את המתקפה בגבורה והשיגה <b>${score} נקודות</b>.<br>בטן שקטה ויציבה ב-100%!`;
     } else {
         gameOverTitle.textContent = "התראת לקטוז! 🤢";
-        gameOverText.innerHTML = `הבטן נכנעה ללקטוז... המשמרת הופסקה באמצע.<br>השגת <b>${score} נקודות</b>.<br>קחי 2 כדורי לקטאז ונתראה בלו"ז הבא!`;
+        gameOverText.innerHTML = `הבטן נכנעה ללקטוז... הפ"ע עם ליאור הופסק באמצע.<br>השגת <b>${score} נקודות</b>.<br>קחי 2 כדורי לקטאז ונתראה בלו"ז הבא!`;
     }
 
     gameOverScreen.classList.remove('hidden');
