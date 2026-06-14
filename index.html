@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מבצע: בטן שקטה 🪖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div id="start-screen" class="overlay">
+        <div class="card">
+            <h1>🪖 מבצע: בטן שקטה</h1>
+            <p>המפקדת, מודיעין מעדכן על מטר מטרים של לקטוז במרחב! האם תצליחי לתמרן בין האיומים ולשרוד את המשמרת?</p>
+            <p class="instructions">הוראות: זוזי ימינה ושמאלה (עם החצים במקלדת או בלחיצה על צידי המסך) כדי לאסוף כדורי לקטאז 💊 וחלב צמחי 🌾, ולהתחמק ממוצרי חלב 🥛🧀🍦!</p>
+            <button id="start-btn">התחל משימה 🚀</button>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <div id="hud">
+            <div>מד לקטוז: <span id="score">0</span></div>
+            <div>חיים: <span id="lives">❤️❤️❤️</span></div>
+        </div>
+        <div id="player">🪖</div>
+    </div>
+
+    <div id="game-over-screen" class="overlay hidden">
+        <div class="card">
+            <h1 id="game-over-title">התראת לקטוז! 🤢</h1>
+            <p id="game-over-text"></p>
+            <button id="restart-btn">ניסיון נוסף 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
